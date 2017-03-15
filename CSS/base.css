@@ -1,0 +1,41 @@
+* {
+    /*background: rgba(0, 0, 0, .1);*/
+}
+
+body {
+    background: #00484B;
+    color: #fff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.task-list {
+    margin: 5px 0;
+}
+
+input[type=text],input[type=date] {
+    display: block;
+    width: 100%;
+}
+
+.task-item {
+    padding: 10px;
+    background: #fff;
+    color: #333;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0.4);
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.task-item:hover {
+    background: #ddd;
+}
