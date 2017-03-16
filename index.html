@@ -10,8 +10,8 @@
 <div class="container">
     <h1>我的ToDo</h1>
     <div class="add-task">
-        <input type="text"/>
-        <button>submit</button>
+        <input type="text" placeholder="e.g 你现在想做什么"/>
+        <button type="submit">submit</button>
     </div>
     <div class="task-list">
         <div class="task-item">
@@ -39,16 +39,23 @@
             <span>detail</span>
         </div>
     </div>
+    <div class="task-detail-mask"></div>
+
     <div class="task-detail">
-        <div class="content"></div>
+        <div class="content">
+            你现在想做什么
+        </div>
          <div>
-            <div class="desc"></div>
+            <div class="desc">
+                <textarea id=""></textarea>
+            </div>
         </div>
         <div class="remind">
             <input type="date"/>
-            <button type="submit">submit</button>
+            <!--<button type="submit">submit</button>-->
         </div>
     </div>
+
 </div>
 
 <script src="js/jquery-3.1.1.js"></script>
