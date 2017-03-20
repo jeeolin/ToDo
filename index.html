@@ -9,35 +9,17 @@
 <body>
 <div class="container">
     <h1>我的ToDo</h1>
-    <div class="add-task">
-        <input type="text" placeholder="e.g 你现在想做什么"/>
+    <form class="add-task">
+        <input name="content" type="text" placeholder="e.g 你现在想做什么" autofocus autocomplete="off" />
         <button type="submit">submit</button>
-    </div>
+    </form>
     <div class="task-list">
-        <div class="task-item">
+       <!-- <div class="task-item">
             <span><input type="checkbox"/></span>
             <span class="task-content">item content 1</span>
             <span>delete</span>
             <span>detail</span>
-        </div>
-        <div class="task-item">
-            <span><input type="checkbox"/></span>
-            <span class="task-content">item content 1</span>
-            <span>delete</span>
-            <span>detail</span>
-        </div>
-        <div class="task-item">
-            <span><input type="checkbox"/></span>
-            <span class="task-content">item content 1</span>
-            <span>delete</span>
-            <span>detail</span>
-        </div>
-        <div class="task-item">
-            <span><input type="checkbox"/></span>
-            <span class="task-content">item content 1</span>
-            <span>delete</span>
-            <span>detail</span>
-        </div>
+        </div>-->
     </div>
     <div class="task-detail-mask"></div>
 
@@ -55,10 +37,11 @@
             <!--<button type="submit">submit</button>-->
         </div>
     </div>
-
 </div>
 
-<script src="js/jquery-3.1.1.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/store/store.js"></script>
 <script src="js/base.js"></script>
+<!--<script src="js/base_demo.js"></script>-->
 </body>
 </html>
