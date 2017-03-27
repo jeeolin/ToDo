@@ -3,10 +3,16 @@
 <head lang="zh">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="CSS/normalize.css"/>
+    <link rel="stylesheet" href="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css"/>
     <link rel="stylesheet" href="CSS/base.css"/>
     <title>My Todo App</title>
 </head>
 <body>
+<div class="msg">
+    <span class="msg-content"></span>
+    <span class="anchor confired">知道了</span>
+</div>
+
 <div class="container">
     <h1>我的ToDo</h1>
     <form class="add-task">
@@ -14,36 +20,16 @@
         <button type="submit">submit</button>
     </form>
     <div class="task-list">
-       <!-- <div class="task-item">
-            <span><input type="checkbox"/></span>
-            <span class="task-content">item content 1</span>
-            <span>delete</span>
-            <span>detail</span>
-        </div>-->
     </div>
     <div class="task-detail-mask"></div>
 
     <div class="task-detail">
-        <!--<div>
-            <div class="content">
-                你现在想做什么
-            </div>
-            <div>
-                <div class="desc">
-                    <textarea id=""></textarea>
-                </div>
-            </div>
-            <div class="remind">
-                <input type="date"/>
-                &lt;!&ndash;<button type="submit">submit</button>&ndash;&gt;
-            </div>
-        </div>-->
     </div>
 </div>
-
+<video class="alerter" src="alert.mp3"></video>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/store/store.js"></script>
+<script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>
 <script src="js/base.js"></script>
-<!--<script src="js/base_demo.js"></script>-->
 </body>
 </html>
